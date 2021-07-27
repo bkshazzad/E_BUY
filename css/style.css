@@ -1,0 +1,235 @@
+/*
+teamplate name: E-BUY
+author:cit
+version:1.0
+----------------------------------
+table of content
+----------------------------------
+1)common css
+2)about css
+*/
+/* common css */
+:root{
+    --highlight-color:#37a000;
+    --text-color:#777;
+    --heading:#353535;
+}
+body{
+    font-family: 'lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,p{
+padding: 0;
+margin: 0;
+}
+ul{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+    color:white;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* top header */
+.top-header{
+padding: 20px 0;
+background-color: rgb(39, 34, 34);
+color: white;
+}
+.top-header ul{
+    text-align: center;
+}
+.left-header ul li{
+display: inline-block;
+padding-right: px;
+}
+.right-header ul li{
+    display: inline-block;
+    padding-right: 13px;
+}
+.cart-icon {
+    color: red;
+}
+/* banner */
+#banner{
+    position: relative;
+}
+/* .slick-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 999999999;
+} */
+#banner .slick-arrow{
+    color:white;
+    cursor: pointer;
+    border: 1px solid white;
+    
+ }
+ #banner .slick-arrow:hover{
+     background-color: red;
+     border:none;
+     transition: 1s;
+    
+ }
+.fa-angle-left{
+    font-size: 50px;
+    position: absolute;
+    left: 43%;
+    bottom: 20px;
+    z-index: 9999;
+    padding: 2px 5px;
+}
+.fa-angle-right{
+    font-size: 50px;
+    position: absolute;
+    right: 43%;
+    bottom: 20px;
+    z-index: 9999;
+    padding: 2px 5px;
+}
+.banner-item{
+    background-size: cover !important;
+    background-position:center !important;
+    height: 600px;
+    z-index: -1;
+}
+.banner-content{
+    position: absolute;
+top: 100px;
+left: 50px;
+color: white;
+}
+.view_more{
+    background-color: rgb(218, 28, 28);
+}
+.view_more :hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+.banner-content a{
+    border: 1px solid white;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.banner-content >a:hover{
+background-color: rgba(255, 0, 0, 0.897);
+}
+.banner-content h1{
+    color: rgba(235, 11, 11, 0.808);
+    font-size:55px ;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.banner-content h2{
+    font-family: sans-serif;
+    padding: 15px 0;
+}
+.banner-content p{
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.842);
+    font-family: sans-serif;
+}
+.banner-item::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.137);
+    z-index: 1;  
+
+}
+/* service-main */
+.service-main{
+    padding: 60px 0;
+    background-color: rgba(187, 171, 171, 0.192);
+}
+.service-item{
+    padding-bottom: 30px;
+}
+/* newest-main */
+.newest-main{
+    padding: 60px 0;
+}
+.newest-main .newest-item{
+
+}
+.newest_details{
+background-color: black;
+   margin-top:-50%;
+   color: white;
+   z-index: 1;
+}
+.sec-heading{
+    margin-bottom: 20px;
+   
+}
+.sec-heading h2{
+    position: relative;
+}
+.sec-heading h2::before,
+.sec-heading h2::after{
+    content:'';
+    position: absolute;
+    bottom: 20px;
+    background-color: rgb(46, 36, 36);
+    left: 0;
+}
+.sec-heading h2::before{
+width: 50%;
+}
+.sec-heading h2::after{
+    width: 25%;
+}
+/* fiterizer */
+.filter_menu ul {
+    text-align: center;
+    padding: 25px 20px;
+}
+.filter_menu ul li{
+display: inline-block;
+font-size: 20px;
+margin-right: 20px;
+color: rgba(0, 0, 0, 0.514);
+font-style: italic;
+}
+/* add_section */
+.add_section{
+    padding: 100px 0;
+    background-color: rgba(128, 128, 128, 0.219);
+    margin-top: 20px;
+}
+/* footer_item */
+.footer_sec{
+    padding: 30px;
+    background-color: rgba(17, 17, 17, 0.726);
+}
+.footer_item{
+    color: white;
+}
+.footer_item a img{
+    color: white;
+}
+.footer_item p{
+    padding: 20px 0;
+}
+.footer_item ul{
+    padding: 25px 0;
+}
+.footer_item ul li{
+   padding: 10px 0;
+
+}
+.footer_item ul li i{
+    margin-right: 5px;
+}
+.footer_icon li{
+    display: inline-block;
+}
