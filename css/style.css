@@ -33,6 +33,37 @@ a{
     text-decoration: none;
     color: white;
 }
+.section_title{
+    text-align: center;
+}
+.section_title h2{
+   
+    font-size: 40px;
+    line-height:44px;
+    color:black;
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.section_title h2::after,
+.section_title h2::before{
+    content:'';
+    position: absolute;
+    height:1px;
+    background-color:rgb(156, 49, 49);
+    left:0;
+    bottom:0;
+}
+
+.section_title h2::before{
+    width:50%;
+    margin-bottom: 5px;
+}
+.section_title h2::after{
+    width:25%;
+}
 /* top header */
 .top-header{
 padding: 20px 0;
@@ -167,28 +198,9 @@ background-color: black;
    color: white;
    z-index: 1;
 }
-.sec-heading{
-    margin-bottom: 20px;
-   
-}
-.sec-heading h2{
-    position: relative;
-}
-.sec-heading h2::before,
-.sec-heading h2::after{
-    content:'';
-    position: absolute;
-    bottom: 20px;
-    background-color: rgb(46, 36, 36);
-    left: 0;
-}
-.sec-heading h2::before{
-width: 50%;
-}
-.sec-heading h2::after{
-    width: 25%;
-}
+
 /* fiterizer */
+
 .filter_menu ul {
     text-align: center;
     padding: 25px 20px;
@@ -202,14 +214,49 @@ font-style: italic;
 }
 /* add_section */
 .add_section{
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: rgba(128, 128, 128, 0.219);
-    margin-top: 20px;
+   
+}
+.add_item h2{
+    color: rgba(218, 28, 28, 0.842);
+    padding: 20px o;
+}
+.add_item h3{
+    padding: 20px 10px;
+}
+.counter_item{
+    border: 1px rgba(44, 42, 42, 0.651) solid;
+    text-align: center;
+    padding: 10px 0;
+}
+.counter_item span{
+
+}
+/* latest_product */
+.latest_product{
+    padding: 30px 0;
+}
+/* testimonial_sec */
+.testimonial_sec{
+    padding: 70px 0;
+    position: relative;
+}
+.testimonial_item{
+    text-align: center;
+}
+.testimonial_item img{
+   border-radius: 50%;
+   margin-left: 25%;
+}
+.test-right-arrow{
+ margin-right: 50px;
 }
 /* footer_item */
 .footer_sec{
     padding: 30px;
     background-color: rgba(17, 17, 17, 0.726);
+    text-align: left;
 }
 .footer_item{
     color: white;
@@ -220,8 +267,12 @@ font-style: italic;
 .footer_item p{
     padding: 20px 0;
 }
+.footer_item h3{
+    padding: 10px 0;
+}
 .footer_item ul{
     padding: 25px 0;
+
 }
 .footer_item ul li{
    padding: 10px 0;
@@ -229,7 +280,27 @@ font-style: italic;
 }
 .footer_item ul li i{
     margin-right: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgba(44, 41, 41, 0.89);
+    padding: 10px;
+    
+}
+.footer_item ul li i:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
 }
 .footer_icon li{
     display: inline-block;
+}
+.sign_up form{
+    margin-top: 20px;
+}
+.sign_up form .submit-btn{
+   background-color: red;
+   border: none;
+   padding: 10px;
+   margin-top: 10px;
 }
